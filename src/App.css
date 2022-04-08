@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.layer-1{
+display: flex;
+margin-top: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.layer-1 .character {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: pink;
   color: white;
+  width: 160px;
+  height: 160px;
+  margin: 0 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+.layer-2{
+  display: flex;
+  margin-top: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.layer-2 .sign{
+  background: red;
+  color: white;
+  width: 160px;
+  height: 100px;
+  margin: 0 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.layer-3{
+  margin-top: 2rem !important;
+  height: 250px;
+  width: 99%;
+  border: 2px solid blueviolet;
+  display: flex;
+  align-items: center;
+margin: auto;
+}
+
+
+.layer-3 .character {
+
+  background: pink;
+  color: white;
+  width: 160px;
+  height: 160px;
+  margin: 0 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.layer-3 .sign{
+  background: red;
+  color: white;
+  width: 160px;
+  height: 100px;
+  margin: 0 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  position: relative;
+}
+
+.layer-3 .rhs-value{
+  background: orange;
+  color: white;
+  width: 160px;
+  height: 160px;
+  margin: 0 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  position: relative;
+}
+
+.delete-btn{
+  position: absolute;
+  top: 0.2em;
+  right: 0.2em;
+  background: red;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+
+}
+
+
+.btn-primary{
+  margin-top: 1rem;
+  background: blueviolet;
+  color: white;
+  width: 8rem;
+padding: 0.3em 0.6em;
+cursor: pointer;
+margin-left: 1rem;
+border-radius: 5px;
 }
